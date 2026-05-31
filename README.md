@@ -73,4 +73,8 @@ src/
 ├── App.jsx
 ├── index.css
 └── main.jsx
-``
+```
+
+## Proje Amacı
+
+Bu proje, modern JavaScript kütüphanelerinden React kullanılarak temel CRUD işlemlerinin uygulanması amacıyla geliştirilmiştir.
