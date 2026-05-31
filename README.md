@@ -1,16 +1,60 @@
-# React + Vite
+# Bütçe Takip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bütçe Takip, React ve Tailwind CSS kullanılarak geliştirilmiş bir gelir-gider takip uygulamasıdır. Kullanıcılar gelir ve gider işlemlerini ekleyebilir, listeleyebilir, güncelleyebilir ve silebilir. Veriler tarayıcının LocalStorage alanında saklanır.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Gelir ve gider ekleme
+- İşlemleri listeleme
+- İşlem güncelleme
+- İşlem silme
+- Kategoriye göre filtreleme
+- Başlığa göre arama
+- Toplam gelir, toplam gider ve bakiye görüntüleme
+- LocalStorage ile veri saklama
 
-## React Compiler
+## Kullanılan Teknolojiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- LocalStorage
 
-## Expanding the ESLint configuration
+## Projeyi Çalıştırma
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Projeyi bilgisayarınızda çalıştırmak için önce bağımlılıkları yükleyin:
+
+```bash
+npm install
+Daha sonra geliştirme sunucusunu başlatın:
+
+npm run dev
+PowerShell üzerinde npm komutu engellenirse şu komut kullanılabilir:
+
+npm.cmd run dev
+Build Alma
+Projeyi yayına hazır hale getirmek için:
+
+npm run build
+Build sonrası oluşan dosyalar dist klasöründe yer alır.
+
+Yayına Alma
+Bu proje Netlify veya Vercel gibi platformlarda yayınlanabilir.
+
+Netlify için ayarlar:
+
+Build command: npm run build
+Publish directory: dist
+Klasör Yapısı
+src/
+├── components/
+├── hooks/
+├── interfaces/
+├── pages/
+├── App.jsx
+├── index.css
+└── main.jsx
+Proje Amacı
+Bu proje, modern JavaScript kütüphanelerinden React kullanılarak temel CRUD işlemlerinin uygulanması amacıyla geliştirilmiştir.
+```
