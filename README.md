@@ -27,26 +27,44 @@ Projeyi bilgisayarınızda çalıştırmak için önce bağımlılıkları yükl
 
 ```bash
 npm install
+```
+
 Daha sonra geliştirme sunucusunu başlatın:
 
+```bash
 npm run dev
-PowerShell üzerinde npm komutu engellenirse şu komut kullanılabilir:
+```
 
+PowerShell üzerinde `npm` komutu engellenirse şu komut kullanılabilir:
+
+```bash
 npm.cmd run dev
-Build Alma
+```
+
+## Build Alma
+
 Projeyi yayına hazır hale getirmek için:
 
+```bash
 npm run build
-Build sonrası oluşan dosyalar dist klasöründe yer alır.
+```
 
-Yayına Alma
+Build sonrası oluşan dosyalar `dist` klasöründe yer alır.
+
+## Yayına Alma
+
 Bu proje Netlify veya Vercel gibi platformlarda yayınlanabilir.
 
 Netlify için ayarlar:
 
+```text
 Build command: npm run build
 Publish directory: dist
-Klasör Yapısı
+```
+
+## Klasör Yapısı
+
+```text
 src/
 ├── components/
 ├── hooks/
@@ -55,6 +73,4 @@ src/
 ├── App.jsx
 ├── index.css
 └── main.jsx
-Proje Amacı
-Bu proje, modern JavaScript kütüphanelerinden React kullanılarak temel CRUD işlemlerinin uygulanması amacıyla geliştirilmiştir.
-```
+``
