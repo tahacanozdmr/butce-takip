@@ -51,11 +51,6 @@ npm run build
 
 Build sonrası oluşan dosyalar `dist` klasöründe yer alır.
 
-## Yayına Alma
-
-Bu proje Netlify veya Vercel gibi platformlarda yayınlanabilir.
-
-Netlify için ayarlar:
 
 ```text
 Build command: npm run build
